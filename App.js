@@ -1,31 +1,3 @@
-// function selectOption(option) {
-//     var selectedOption = option.textContent.trim();
-//     var questionBox = option.closest('.question-box');
-//     var circles = questionBox.querySelectorAll('.option-circle');
-//     circles.forEach(function(circle) {
-//         circle.classList.remove('selected');
-//     });
-//     option.classList.add('selected');
-// }
-
-
-// function submitQuiz() {
-//     var answers = [];
-//     var questionBoxes = document.querySelectorAll('.question-box');
-//     questionBoxes.forEach(function(questionBox) {
-//         var selectedCircle = questionBox.querySelector('.selected');
-//         if (selectedCircle) {
-//             var answer = selectedCircle.nextSibling.textContent.trim();
-//             answers.push(answer);
-//         } else {
-//             answers.push(null);
-//         }
-//     });
-//     // Process answers here (e.g., calculate score)
-//     console.log('Submitted answers:', answers);
-//     // You can also send the answers to a server for further processing
-// }
-
 function submitQuiz() {
     var totalScore = 0;
 
@@ -85,4 +57,22 @@ function selectOption(option) {
 
     // Add 'selected' class to the clicked option
     option.classList.add('selected');
+}
+
+function clearForm() {
+    // Get all input fields in the form
+    var inputFields = document.querySelectorAll('input[type="text"], input[type="email"], input[type="number"]');
+    
+    // Loop through each input field and reset its value
+    inputFields.forEach(function(input) {
+        input.value = '';
+    });
+    
+    // Get all option circles in the quiz questions
+    var optionCircles = document.querySelectorAll('.option-circle');
+    
+    // Loop through each option circle and remove the 'selected' class
+    optionCircles.forEach(function(circle) {
+        circle.classList.remove('selected');
+    });
 }
