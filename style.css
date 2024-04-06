@@ -1,0 +1,130 @@
+*{
+    padding: 20;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#6196A6;
+    font-family: arial,sans-serif;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+h1 {
+    text-align: center;
+    color: #F6F5F5;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.question-box {
+    background-color: #ffffff;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.options {
+    list-style-type: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.options li {
+    margin-right: 10px;
+    display:flex;
+    align-items: center;;
+}
+/*.option-number {
+    /*transform: rotate(180deg); /* Rotate the number upside down */
+   /* margin-right: 20px; /* Add space between the number and option text */
+
+
+.option-circle {
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.option-circle.selected {
+    background-color:#6196A6;
+    border-color:#6196A6;
+    color: #6196A6;
+}
+/* .options li::before{
+    content:counter(option-counter,decimal);
+    counter-increment:option-counter;
+    margin-right:5px;
+} */
+
+.option-text {
+    margin-right: 20px; /* Adjust spacing between text and options */
+    margin-left: 20px;
+}
+.img{
+    padding-top: 5%;
+}
+
+.user-info-box{
+    background-color:#ffffff;
+    border: 1px solid #cccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.user-info-box .question0{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.option1{
+    list-style-type: none;
+    padding: 0;
+}
+.option1 li{
+    margin-bottom: 5px;
+
+}
+.form-container{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.clear-form{
+    display: inline;
+    margin-left: 10px;
+    color:#F6F5F5;
+    cursor: pointer;
+    text-align: right;
+}
+.submit-button {
+    display: block;
+    width: 30%;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: #124076;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    align-items: center;
+}
